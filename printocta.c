@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printocta - prints a hexadecimal
+ * printf_o - prints a hexadecimal
  * @format: format to print hexadecimal
  * @pa: list that contains the hexadecimal
  * Return: number.
