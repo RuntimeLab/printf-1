@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_integer(va_list args, int count_of_printed)
+int printf_integer(va_list args, int count_of_printed)
 {
     int num = va_arg(args, int);
     int digits = 0;
