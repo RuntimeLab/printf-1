@@ -4,7 +4,7 @@
 int _printf(const char *format, ...)
 {
     va_list args;
-    int count = 0;
+    int count_of_printed = 0;
 
     va_start(args, format);
 
@@ -15,28 +15,28 @@ int _printf(const char *format, ...)
             // Handle escape sequence %%
             if (*format == '%') {
                 putchar('%');
-                count++;
+                count_of_printed++;
                 format++;
                 continue;
             }
 
             // Handle character conversion specifier %c
             if (*format == 'c') {
-                count = print_char(args, count);
+                count_of_printed = print_char(args, count_of_printed);
                 format++;
                 continue;
             }
 
             // Handle string conversion specifier %s
             if (*format == 's') {
-                count = print_string(args, count);
+                count_of_printed = print_string(args, count_of_printed);
                 format++;
                 continue;
             }
 
             // Handle integer conversion specifiers %d and %i
             if (*format == 'd' || *format == 'i') {
-                count = print_integer(args, count);
+                count_of_printed = print_integer(args, count_of_printed);
                 format++;
                 continue;
             }
@@ -44,11 +44,11 @@ int _printf(const char *format, ...)
 
         // Handle regular characters
         putchar(*format);
-        count++;
+        count_of_printed++;
         format++;
     }
 
     va_end(args);
 
-    return count;
+    return count_of_printed;
 }
