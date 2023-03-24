@@ -18,7 +18,7 @@ int print_argument(const char *format, va_list args, int count_of_printed) {
             count_of_printed++;
             break;
         case 'b':
-            count_of_printed = print_binary(args, count_of_printed);
+            count_of_printed = print_binary(va_arg(args, unsigned int), count_of_printed);
             break;
         default:
             // Unknown conversion specifier - ignore it
