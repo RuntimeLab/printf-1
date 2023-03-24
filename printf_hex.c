@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_hex(unsigned int num, int count_of_printed, int uppercase) {
+int printf_hex(unsigned int num, int count_of_printed, int uppercase) {
     int hex[100], i = 0, j;
     while (num != 0) {
         int remainder = num % 16;
