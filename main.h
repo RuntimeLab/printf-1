@@ -11,5 +11,7 @@ int print_integer(va_list args, int count_of_printed);
 int select_specifier(const char *format, va_list args, int count_of_printed);
 int print_binary(unsigned int num, int count_of_printed);
 int _printf(const char *format, ...);
+int print_hex(unsigned int num, int count_of_printed, int uppercase);
+int print_octal(unsigned int num, int count_of_printed);
 
 #endif
