@@ -40,6 +40,13 @@ int _printf(const char *format, ...)
                 format++;
                 continue;
             }
+            
+            // Handle integer conversion specifiers %b
+            if (*format == 'b') {
+                count_of_printed = print_binary(va_arg(args, unsigned int), count_of_printed);
+                format++;
+                continue;
+            }
         }
 
         // Handle regular characters
