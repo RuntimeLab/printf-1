@@ -1,12 +1,22 @@
 #include "main.h"
 
-int printf_string(va_list args, int count_of_printed)
-{
-    char *string = va_arg(args, char *);
-    while (*string != '\0') {
-        putchar(*string);
-        count_of_printed++;
-        string++;
+int print_string(va_list args, int count_of_printed) {
+    char* str = va_arg(args, char*);
+    int i = 0;
+    while (str[i]) {
+        if ((str[i] > 0 && str[i] < 32) || str[i] >= 127) {
+            char hex[3];
+            hex[0] = '\\';
+            hex[1] = 'x';
+            to_hex(str[i], &hex[2]);
+            write(1, hex, 4);
+            count_of_printed += 4;
+        }
+        else {
+            write(1, &str[i], 1);
+            count_of_printed++;
+        }
+        i++;
     }
     return count_of_printed;
 }
