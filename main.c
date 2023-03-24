@@ -11,9 +11,9 @@ int main() {
     _printf("This is a percentage sigh: %%\n");
     _printf("This is a character: %c\n", 'v');
     _printf("This is another number: %i\n", 999);
-    _printf("This is your hex: %x", my_hex);
-    _printf("This is your octal: %o", my_octal);
-    _printf("This is your unsigned number: %u", my_unsigned);
-    _printf("Binary symbol number: %b My name is %s and I'm writing this project with %s who is %d years old and has %i cars and nickname %%", 44, "Antony", "Oyengo", 25, 28, "%");  // Output: i = -123
+    _printf("This is your hex: %x\n", my_hex);
+    _printf("This is your octal: %o\n", my_octal);
+    _printf("This is your unsigned number: %u\n", my_unsigned);
+    _printf("Binary symbol number: %b My name is %s and I'm writing this project with %s who is %d years old and has %i cars and nickname %%\n", 44, "Antony", "Oyengo", 25, 28, "%");
     return 0;
 }
