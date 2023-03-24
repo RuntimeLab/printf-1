@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_unsigned(unsigned int num, int count_of_printed) {
+int printf_unsigned(unsigned int num, int count_of_printed) {
     int digits = 0;
     unsigned int temp = num;
     do {
