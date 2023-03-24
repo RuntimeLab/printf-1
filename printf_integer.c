@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_integer(va_list args, int count)
+int print_integer(va_list args, int count_of_printed)
 {
     int num = va_arg(args, int);
     int digits = 0;
@@ -8,13 +8,13 @@ int print_integer(va_list args, int count)
 
     if (num < 0) {
         putchar('-');
-        count++;
+        count_of_printed++;
         temp = -temp;
     }
 
     if (temp == 0) {
         putchar('0');
-        count++;
+        count_of_printed++;
         return count;
     }
 
@@ -34,7 +34,7 @@ int print_integer(va_list args, int count)
         int digit = temp / divisor;
         temp %= divisor;
         putchar('0' + digit);
-        count++;
+        count_of_printed++;
         digits--;
     }
 
