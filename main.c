@@ -14,6 +14,7 @@ int main() {
     _printf("This is your hex: %x\n", my_hex);
     _printf("This is your octal: %o\n", my_octal);
     _printf("This is your unsigned number: %u\n", my_unsigned);
+    _printf("This is your string: %S\n", "Hooray, this works!\n\x8F");
     _printf("Binary symbol number: %b My name is %s and I'm writing this project with %s who is %d years old and has %i cars and nickname %%\n", 44, "Antony", "Oyengo", 25, 28, "%");
     return 0;
 }
