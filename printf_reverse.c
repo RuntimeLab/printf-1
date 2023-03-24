@@ -1,6 +1,6 @@
 #include "main.h"
 
-int printf_reversed(va_list args, int count_of_printed)
+int printf_reverse(va_list args, int count_of_printed)
 {
     char *str = va_arg(args, char *);
     int len = 0, i;
