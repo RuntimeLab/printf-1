@@ -1,11 +1,11 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * printocta - prints a hexadecimal
  * @format: format to print hexadecimal
  * @pa: list that contains the hexadecimal
  * Return: number.
  */
-int printocta(char *format, va_list pa)
+int printf_o(char *format, va_list pa)
 {
 	unsigned int num = va_arg(pa, unsigned int);
 	unsigned int copia;
