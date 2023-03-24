@@ -13,5 +13,6 @@ int print_binary(unsigned int num, int count_of_printed);
 int _printf(const char *format, ...);
 int print_hex(unsigned int num, int count_of_printed, int uppercase);
 int print_octal(unsigned int num, int count_of_printed);
+int print_unsigned(unsigned int num, int count_of_printed);
 
 #endif
