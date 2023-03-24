@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_unsigned(unsigned int num, int count) {
+int print_unsigned(unsigned int num, int count_of_printed) {
     int digits = 0;
     unsigned int temp = num;
     do {
@@ -9,7 +9,7 @@ int print_unsigned(unsigned int num, int count) {
     } while (temp != 0);
     if (num == 0) {
         putchar('0');
-        count++;
+        count_of_printed++;
     } else {
         char unsigned_str[digits];
         int i = 0;
@@ -20,8 +20,8 @@ int print_unsigned(unsigned int num, int count) {
         }
         for (i = digits - 1; i >= 0; i--) {
             putchar(unsigned_str[i]);
-            count++;
+            count_of_printed++;
         }
     }
-    return count;
+    return count_of_printed;
 }
