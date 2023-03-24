@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_string(va_list args, int count_of_printed)
+int printf_string(va_list args, int count_of_printed)
 {
     char *string = va_arg(args, char *);
     while (*string != '\0') {
