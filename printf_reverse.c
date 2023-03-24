@@ -10,7 +10,7 @@ int printf_reverse(va_list args, int count_of_printed)
 
     for (i = len - 1; i >= 0; i--)
     {
-        _putchar(str[i]);
+        putchar(str[i]);
         count_of_printed++;
     }
 
