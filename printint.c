@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _abs - calculates the absolute value.
  * @number: input.
@@ -59,12 +59,12 @@ unint = -number;
 }
 
 /**
- * printint - prints a number
+ * printf_d - prints a number
  * @format: format to print number
  * @pa: va_list with number to print
  * Return: number of characters printed
  */
-int printint(char *format, va_list pa)
+int printf_d(char *format, va_list pa)
 {
 	int number = va_arg(pa, int);
 	int numero;
