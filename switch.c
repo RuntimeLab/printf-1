@@ -24,6 +24,9 @@ int select_specifier(const char *format, va_list args, int count_of_printed) {
         case 'X':
             count_of_printed = print_hex(va_arg(args, unsigned int), count_of_printed, (*format == 'X') ? 1 : 0);
             break;
+        case 'o':
+            count = print_octal(va_arg(args, unsigned int), count_of_printed);
+            break;
         default:
             // Unknown conversion specifier - ignore it
             break;
