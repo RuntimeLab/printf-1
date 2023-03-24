@@ -1,12 +1,12 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * printstr- print str.
+ * printf_s- print str.
  * @pa: gtgtg
  * @format: format str.
  * Return: number str for print.
  */
-int printstr(char *format, va_list pa)
+int printf_s(char *format, va_list pa)
 {
 	char *string = va_arg(pa, char *);
 	int contador;
