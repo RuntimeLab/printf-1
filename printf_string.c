@@ -8,7 +8,9 @@ int print_string(va_list args, int count_of_printed) {
             char hex[3];
             hex[0] = '\\';
             hex[1] = 'x';
-            to_hex(str[i], &hex[2]);
+            int val = str[i];
+            hex[2] = (val / 16) < 10 ? (val / 16) + '0' : (val / 16) - 10 + 'A';
+            hex[3] = (val % 16) < 10 ? (val % 16) + '0' : (val % 16) - 10 + 'A';
             write(1, hex, 4);
             count_of_printed += 4;
         }
@@ -20,3 +22,4 @@ int print_string(va_list args, int count_of_printed) {
     }
     return count_of_printed;
 }
+
