@@ -1,12 +1,12 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * printpercent - prints %
+ * printf_percent - prints %
  * @format: format
  * @pa: va_list
  * Return: number of characters printed
  */
-int printpercent(char *format, va_list pa)
+int printf_percent(char *format, va_list pa)
 {
 	(void)format;
 	(void)pa;
