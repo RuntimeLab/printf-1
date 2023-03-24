@@ -30,6 +30,9 @@ int select_specifier(const char *format, va_list args, int count_of_printed) {
         case 'u':
             count_of_printed = printf_unsigned(va_arg(args, unsigned int), count_of_printed);
             break;
+        case 'r':
+            count_of_printed = print_reversed(args, count_of_printed);
+            break;
         default:
             // Unknown conversion specifier - ignore it
             break;
