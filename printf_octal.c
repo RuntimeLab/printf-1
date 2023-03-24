@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_octal(unsigned int num, int count_of_printed) {
+int printf_octal(unsigned int num, int count_of_printed) {
     int oct[100], i = 0, j;
     while (num != 0) {
         int remainder = num % 8;
