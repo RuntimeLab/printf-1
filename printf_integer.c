@@ -15,7 +15,7 @@ int print_integer(va_list args, int count_of_printed)
     if (temp == 0) {
         putchar('0');
         count_of_printed++;
-        return count;
+        return count_of_printed;
     }
 
     // Determine the number of digits in the number
