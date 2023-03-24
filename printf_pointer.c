@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_pointer(va_list args, int count_of_printed)
+int printf_pointer(va_list args, int count_of_printed)
 {
     void *ptr = va_arg(args, void *);
     unsigned long int num = (unsigned long int) ptr;
