@@ -14,5 +14,6 @@ int _printf(const char *format, ...);
 int printf_hex(unsigned int num, int count_of_printed, int uppercase);
 int printf_octal(unsigned int num, int count_of_printed);
 int printf_unsigned(unsigned int num, int count_of_printed);
+int printf_reversed(va_list args, int count_of_printed);
 
 #endif
