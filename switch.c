@@ -33,6 +33,9 @@ int select_specifier(const char *format, va_list args, int count_of_printed) {
         case 'r':
             count_of_printed = printf_reverse(args, count_of_printed);
             break;
+        case 'p':
+            count_of_printed = printf_pointer(args, count_of_printed);
+            break;
         default:
             // Unknown conversion specifier - ignore it
             break;
