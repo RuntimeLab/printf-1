@@ -2,11 +2,11 @@
 
 int print_string(va_list args, int count_of_printed)
 {
-    char *str = va_arg(args, char *);
-    while (*str != '\0') {
-        putchar(*str);
+    char *string = va_arg(args, char *);
+    while (*string != '\0') {
+        putchar(*string);
         count_of_printed++;
-        str++;
+        string++;
     }
     return count_of_printed;
 }
