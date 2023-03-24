@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_binary(unsigned int num, int count_of_printed) {
+int printf_binary(unsigned int num, int count_of_printed) {
     if (num == 0) {
         putchar('0');
         count_of_printed++;
