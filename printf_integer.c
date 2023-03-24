@@ -38,5 +38,5 @@ int print_integer(va_list args, int count_of_printed)
         digits--;
     }
 
-    return count;
+    return count_of_printed;
 }
