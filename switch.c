@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_argument(const char *format, va_list args, int count_of_printed) {
+int select_specifier(const char *format, va_list args, int count_of_printed) {
     switch (*format) {
         case 'd':
         case 'i':
