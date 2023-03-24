@@ -2,6 +2,7 @@
 Foundations - Low-level programming & Algorithm ― Hatching out
 by Julien Barbier, co-founder at Holberton School.
 Project to be done in teams of 2 people (your team: Cristhiam Camilo Baquero Gomez, Camilo Bayona Orduz)
+Happy coding
 
 ## Background Context
 * Write your own `printf` function.
