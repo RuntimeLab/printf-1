@@ -9,7 +9,7 @@ int _printf(const char *format, ...) {
     while (*format != '\0') {
         if (*format == '%') {
             format++;
-            count_of_printed = print_argument(format, args, count_of_printed);
+            count_of_printed = select_specifier(format, args, count_of_printed);
             format++;
         } else {
             putchar(*format);
