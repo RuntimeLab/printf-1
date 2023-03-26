@@ -9,7 +9,8 @@ int printf_integer(va_list args, int printed)
     if (num < 0) {
         _putchar('-');
         printed++;
-        temp = -temp;
+        //temp = -temp;
+        return printed;
     }
 
     if (temp == 0) {
