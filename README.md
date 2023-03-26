@@ -23,12 +23,12 @@ is a Low-Level Programming project writen in C language.
 |   [📌](#man_3_printf)   | [man_3_printf](./man_3_printf)               | The man page for  `_printf` program                   |
 | [📌](#printf_binary)  | [printf_binary.c](./printf_binary.c)         | Prints binary represetation using `%b` |
 | [📌](#printf_char)  | [printf_char.c](./printf_char.c)         | Prints a single character using `%c` |
-| [📌](#printf_hex)  | [printf_hex.c](./printf_hex.c)         | Prints hexadecimal represetation using `%x and `%X` |
-| [📌](#printf_integer)  | [printf_integer.c](./printf_binary.c)         | Prints an integer using `%d and `%i` |
+| [📌](#printf_hex)  | [printf_hex.c](./printf_hex.c)         | Prints hexadecimal represetation using `%x and `%X`|
+| [📌](#printf_integer)  | [printf_hex.c](./printf_hex.c)         | Prints an integer using `%d and `%i` |
 | [📌](#printf_octal)  | [printf_octal.c](./printf_octal.c)         | Prints octal represetation using `%o` |
 | [📌](#printf_pointer)  | [printf_pointer.c](./printf_pointer.c)         | Prints a pointer using `%p` |
-| [📌](#printf_reverse)  | [printf_reverse.c](./printf_binary.c)         | Prints in reverse using `%r` |
-| [📌](#printf_string)  | [printf_string.c](./printf_binary.c)         | Prints a string suing `%s` |
+| [📌](#printf_reverse)  | [printf_reverse.c](./printf_reverse.c)         | Prints in reverse using `%r` |
+| [📌](#printf_string)  | [printf_string.c](./printf_string.c)         | Prints a string suing `%s` |
 | [📌](#printf_unsigned)  | [printf_unsigned.c](./printf_unsigned.c)         | Prints an unsigned integer using `%u` |
 
 
