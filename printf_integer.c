@@ -7,13 +7,13 @@ int printf_integer(va_list args, int printed)
     int temp = num;
 
     if (num < 0) {
-        putchar('-');
+        _putchar('-');
         printed++;
         temp = -temp;
     }
 
     if (temp == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
         return printed;
     }
@@ -33,7 +33,7 @@ int printf_integer(va_list args, int printed)
         }
         int digit = temp / divisor;
         temp %= divisor;
-        putchar('0' + digit);
+        _putchar('0' + digit);
         printed++;
         digits--;
     }
