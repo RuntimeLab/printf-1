@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_binary - prints a binary number
+ * printf_char - prints a binary number
  * @printed: the printed characters
  * Return: printed charcaters
  */
