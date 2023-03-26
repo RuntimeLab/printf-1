@@ -8,7 +8,7 @@ int printf_unsigned(unsigned int num, int printed) {
         temp /= 10;
     } while (temp != 0);
     if (num == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
     } else {
         char unsigned_str[digits];
@@ -19,7 +19,7 @@ int printf_unsigned(unsigned int num, int printed) {
             i++;
         }
         for (i = digits - 1; i >= 0; i--) {
-            putchar(unsigned_str[i]);
+            _putchar(unsigned_str[i]);
             printed++;
         }
     }
