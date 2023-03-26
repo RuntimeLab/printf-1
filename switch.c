@@ -24,7 +24,7 @@ int selector(const char *format, va_list args, int printed)
 			break;
 		case 'x':
 		case 'X':
-			printed = pr_x(va_arg(args, unsigned int), printed, (*format == 'X') ? 1 : 0);
+			printed = _x(va_arg(args, unsigned int), printed, (*format == 'X') ? 1 : 0);
 			break;
 		case 'o':
 			printed = printf_octal(va_arg(args, unsigned int), printed);
