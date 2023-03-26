@@ -2,7 +2,7 @@
 
 int printf_binary(unsigned int num, int printed) {
     if (num == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
         return printed;
     }
@@ -20,9 +20,9 @@ int printf_binary(unsigned int num, int printed) {
     // Print the binary digits from right to left
     while (i > 0) {
         i--;
-        putchar('0' + binary[i]);
+        _putchar('0' + binary[i]);
         printed++;
     }
 
-    return printed;
+    return (printed);
 }
