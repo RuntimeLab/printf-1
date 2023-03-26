@@ -7,7 +7,7 @@ int printf_integer(va_list args, int printed) {
 
     if (num < 0) {
         _putchar('-');
-        count++;
+        printed++;
         temp = -temp;
     }
 
