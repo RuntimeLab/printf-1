@@ -38,5 +38,5 @@ int printf_integer(va_list args, int printed)
         digits--;
     }
 
-    return printed;
+    return (printed);
 }
