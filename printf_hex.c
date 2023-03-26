@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * printf_binary - prints a binary number
+ * @num: number arguements
+ * @printed: the printed characters
+ * @uppercase: the uppercase equivalent
+ * Return: printed charcaters
+ */
+
 int _x(unsigned int num, int printed, int uppercase)
 {
 	int hex[100], i = 0, j;
