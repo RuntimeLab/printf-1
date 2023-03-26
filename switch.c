@@ -1,6 +1,6 @@
 #include "main.h"
 
-int select_specifier(const char *format, va_list args, int printed)
+int selector(const char *format, va_list args, int printed)
 {
 	switch (*format)
 	{
