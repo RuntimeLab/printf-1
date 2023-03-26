@@ -19,10 +19,18 @@ is a Low-Level Programming project writen in C language.
 |      [📌](#_printf)      | [_printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |      [📌](#_putchar)      | [_putchar.c](./_putchar.c)                         | Custom implementation of the inbuilt `putchar`.                                |
 |   [📌](#main)    | [main.c](./main.c)                 | Tests for `_printf` program.       |
-|   [📌](#main.h)    | [main.h](./main.h)                 | Header file containing all prototypes for                    |
-|   [📌](#buffer_ops2c)   | [buffer_ops2.c](./buffer_ops2.c)               | Contains functions related to the buffer.                    |
-| [📌](#write_op_funcsc)  | [write_op_funcs.c](./write_op_funcs.c)         | Contains functions related to writing out the `Buffer` to `STDOUT`. |
-| [📌](#write_op2_funcsc) | [write_op2_funcs.c](write_op2_funcs.c)         | Contains a function that converts binary into base 10 number. |
+|   [📌](#main.h)    | [main.h](./main.h)                 | Header file containing all prototypes for `_printf` program                    |
+|   [📌](#man_3_printf)   | [man_3_printf](./man_3_printf)               | The man page for  `_printf` program                   |
+| [📌](#printf_binary)  | [printf_binary.c](./printf_binary.c)         | Prints binary represetation using `%b` |
+| [📌](#printf_char)  | [printf_char.c](./printf_char.c)         | Prints a single character using `%c` |
+| [📌](#printf_hex)  | [printf_hex.c](./printf_hex.c)         | Prints hexadecimal represetation using `%x and `%X` |
+| [📌](#printf_integer)  | [printf_integer.c](./printf_binary.c)         | Prints an integer using `%d and `%i` |
+| [📌](#printf_octal)  | [printf_octal.c](./printf_octal.c)         | Prints octal represetation using `%o` |
+| [📌](#printf_pointer)  | [printf_pointer.c](./printf_pointer.c)         | Prints a pointer using `%p` |
+| [📌](#printf_reverse)  | [printf_reverse.c](./printf_binary.c)         | Prints in reverse using `%r` |
+| [📌](#printf_string)  | [printf_string.c](./printf_binary.c)         | Prints a string suing `%s` |
+| [📌](#printf_unsigned)  | [printf_unsigned.c](./printf_unsigned.c)         | Prints an unsigned integer using `%u` |
+
 
 
 
