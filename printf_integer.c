@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printf_binary - prints a binary number
+ * @args: number arguements
+ * @printed: the printed characters
+ * Return: printed charcaters
+ */
+
 int printf_integer(va_list args, int printed)
 {
 	int num = va_arg(args, int);
