@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_pointer(va_list args, int printed) {
+int printf_pointer(va_list args, int printed) {
     void *ptr = va_arg(args, void *);
     char hex[16];
     int i, j;
