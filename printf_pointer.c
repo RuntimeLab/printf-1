@@ -6,15 +6,15 @@ int printf_pointer(va_list args, int printed)
     unsigned long int num = (unsigned long int) ptr;
     int digits = 0;
     int temp = num;
-    putchar('0');
-    putchar('x');
+    _putchar('0');
+    _putchar('x');
     printed += 2;
     while (temp != 0) {
         digits++;
         temp /= 16;
     }
     if (num == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
     }
     else {
@@ -27,9 +27,9 @@ int printf_pointer(va_list args, int printed)
             i--;
         }
         for (i = 0; i < digits; i++) {
-            putchar(buffer[i]);
+            _putchar(buffer[i]);
             printed++;
         }
     }
-    return printed;
+    return (printed);
 }
