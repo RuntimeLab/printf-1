@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printf_binary - prints a binary number
+ * @num: number arguements
+ * @printed: the printed characters
+ * Return: printed charcaters
+ */
+
 int printf_binary(unsigned int num, int printed)
 {
 	int binary[32] = {0};
