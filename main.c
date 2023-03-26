@@ -1,24 +1,42 @@
 #include "main.h"
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
 {
-	int number = 42;
-	char *string = "Hello my name is Antony Oyengo!";
-	unsigned int my_hex = 0x126AFC;
-	unsigned int my_unsigned = 1234567890;
-       	unsigned int my_octal = 01234567;
-	char gender[] = "Male";
+    int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
 
-	_printf("This is a number: = %d\n", number);
-	_printf("This is a string: = %s\n", string);
-	_printf("This is a percentage sigh: %%\n");
-	_printf("This is a character: %c\n", 'v');
-	_printf("This is another number: %i\n", 999);
-	_printf("This is your hex: %x\n", my_hex);
-	_printf("This is your octal: %o\n", my_octal);
-	_printf("This is your unsigned number: %u\n", my_unsigned);
-	_printf("Hello the Oyengo. Or should I say %r!\n", "Oyengo");
-	_printf("This is your pointer: %p\n", &gender);
-	_printf("Binary symbol number: %b My name is %s and I'm writing this project with %s who is %d years old and has %i cars and nickname %%\n", 44, "Antony", "Oyengo", 25, 28, "%");
-	return (0);
+    len = _printf("Let's try to printf a simple sentence.\n");
+    len2 = printf("Let's try to printf a simple sentence.\n");
+    ui = (unsigned int)INT_MAX + 1024;
+    addr = (void *)0x7ffe637541f0;
+    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len2, len2);
+    _printf("Negative:[%d]\n", -762534);
+    printf("Negative:[%d]\n", -762534);
+    _printf("Unsigned:[%u]\n", ui);
+    printf("Unsigned:[%u]\n", ui);
+    _printf("Unsigned octal:[%o]\n", ui);
+    printf("Unsigned octal:[%o]\n", ui);
+    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    _printf("Character:[%c]\n", 'H');
+    printf("Character:[%c]\n", 'H');
+    _printf("String:[%s]\n", "I am a string !");
+    printf("String:[%s]\n", "I am a string !");
+    _printf("Address:[%p]\n", addr);
+    printf("Address:[%p]\n", addr);
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
+    _printf("Len:[%d]\n", len);
+    printf("Len:[%d]\n", len2);
+    _printf("Unknown:[%r]\n");
+    printf("Unknown:[%r]\n");
+    return (0);
 }
