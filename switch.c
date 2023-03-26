@@ -9,14 +9,14 @@ int select_specifier(const char *format, va_list args, int printed)
 			printed = printf_integer(args, printed);
 			break;
 		case 'c':
-			putchar(va_arg(args, int));
+			_putchar(va_arg(args, int));
 			printed++;
 			break;
 		case 's':
 			printed = printf_string(args, printed);
 			break;
 		case '%':
-			putchar('%');
+			_putchar('%');
 			printed++;
 			break;
 		case 'b':
@@ -41,5 +41,5 @@ int select_specifier(const char *format, va_list args, int printed)
 		default:
 			break;
 	}
-	return printed;
+	return (printed);
 }
