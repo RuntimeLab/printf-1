@@ -2,7 +2,7 @@
 
 /**
  * printf_string - prints a binary number
- * @num: numberof arguements
+ * @args: numberof arguements
  * @printed: the printed characters
  * Return: printed charcaters
  */
