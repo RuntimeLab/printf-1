@@ -11,7 +11,7 @@ int printf_unsigned(unsigned int num, int printed) {
         _putchar('0');
         printed++;
     } else {
-        char unsigned_str[11]; // fixed size array with a maximum size of 10 digits plus null terminator
+        char unsigned_str[11];
         int i = 0;
         while (num != 0) {
             unsigned_str[i] = (num % 10) + '0';
