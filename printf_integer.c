@@ -1,6 +1,6 @@
 #include "main.h"
 
-int printf_integer(va_list args, int count_of_printed)
+int printf_integer(va_list args, int printed)
 {
     int num = va_arg(args, int);
     int digits = 0;
@@ -8,14 +8,14 @@ int printf_integer(va_list args, int count_of_printed)
 
     if (num < 0) {
         putchar('-');
-        count_of_printed++;
+        printed++;
         temp = -temp;
     }
 
     if (temp == 0) {
         putchar('0');
-        count_of_printed++;
-        return count_of_printed;
+        printed++;
+        return printed;
     }
 
     // Determine the number of digits in the number
@@ -34,9 +34,9 @@ int printf_integer(va_list args, int count_of_printed)
         int digit = temp / divisor;
         temp %= divisor;
         putchar('0' + digit);
-        count_of_printed++;
+        printed++;
         digits--;
     }
 
-    return count_of_printed;
+    return printed;
 }
