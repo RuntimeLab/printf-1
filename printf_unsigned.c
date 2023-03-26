@@ -23,5 +23,5 @@ int printf_unsigned(unsigned int num, int printed) {
             printed++;
         }
     }
-    return printed;
+    return (printed);
 }
