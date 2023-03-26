@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_binary - prints a binary number
+ * printf_pointer - prints a binary number
  * @args: numberof arguements
  * @printed: the printed characters
  * Return: printed charcaters
