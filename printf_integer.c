@@ -17,9 +17,11 @@ int printf_integer(va_list args, int printed)
         temp /= 10;
     } while (temp != 0);
 
-    while (digits > 0) {
+    while (digits > 0) 
+    {
         int pow10 = 1;
-        for (int i = 1; i < digits; i++) {
+        int i;
+        for (i = 1; i < digits; i++) {
             pow10 *= 10;
         }
         int digit = num / pow10;
