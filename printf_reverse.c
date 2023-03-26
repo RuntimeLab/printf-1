@@ -10,9 +10,9 @@ int printf_reverse(va_list args, int printed)
 
     for (i = len - 1; i >= 0; i--)
     {
-        putchar(str[i]);
+        _putchar(str[i]);
         printed++;
     }
 
-    return printed;
+    return (printed);
 }
