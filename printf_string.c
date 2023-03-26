@@ -4,10 +4,10 @@ int printf_string(va_list args, int printed)
 {
     char *string = va_arg(args, char *);
     while (*string != '\0') {
-        putchar(*string);
+        _putchar(*string);
         printed++;
         string++;
     }
-    return printed;
+    return (printed);
 }
 
