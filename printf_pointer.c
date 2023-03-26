@@ -5,10 +5,10 @@ int printf_pointer(va_list args, int printed) {
     char hex[16];
     int i, j;
     unsigned long int address = (unsigned long int)ptr;
-    printed += print_string("0x");
+    printed += printf_string("0x");
 
     if (address == 0) {
-        printed += print_char('0');
+        printed += printf_char('0');
         return printed;
     }
 
@@ -23,10 +23,10 @@ int printf_pointer(va_list args, int printed) {
     }
 
     for (j = i - 1; j >= 0; j--) {
-        printed += print_char(hex[j]);
+        printed += printf_char(hex[j]);
     }
 
-    return printed;
+    return (printed);
 }
 
 }
