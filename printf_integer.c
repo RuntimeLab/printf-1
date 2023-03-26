@@ -1,34 +1,35 @@
 #include "main.h"
-#include <math.h>
 
-int printf_integer(va_list args, int printed)
+int print_integer(va_list args, int printed)
 {
     int num = va_arg(args, int);
     int digits = 0;
+    int temp = num;
 
-    // handle negative numbers
+    // Handle negative numbers
     if (num < 0) {
-        _putchar('-');
-        printed++;
+        printed += _putchar('-');
         num = -num;
+        temp = num;
     }
 
-    // count number of digits
-    int temp = num;
+    // Count the number of digits
     do {
         digits++;
         temp /= 10;
     } while (temp != 0);
 
-    // print digits in correct order
-    temp = num;
-    for (int i = digits - 1; i >= 0; i--) {
-        int divisor = pow(10, i);
-        int digit = temp / divisor;
-        _putchar('0' + digit);
-        printed++;
-        temp %= divisor;
+    // Print the digits in the correct order
+    while (digits > 0) {
+        int pow10 = 1;
+        for (int i = 1; i < digits; i++) {
+            pow10 *= 10;
+        }
+        int digit = num / pow10;
+        printed += _putchar(digit + '0');
+        num -= digit * pow10;
+        digits--;
     }
 
-    return printed;
+    return (printed);
 }
