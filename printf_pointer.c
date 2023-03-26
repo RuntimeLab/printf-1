@@ -2,9 +2,9 @@
 
 int printf_pointer(va_list args, int printed) {
     void *ptr = va_arg(args, void*);
-    unsigned long long num = (unsigned long long) ptr;
+    unsigned long num = (unsigned long) ptr;
     int digits = 0;
-    unsigned long long temp = num;
+    unsigned long temp = num;
 
     while (temp != 0) {
         digits++;
