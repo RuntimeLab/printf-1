@@ -1,10 +1,10 @@
 #include "main.h"
 
-int printf_binary(unsigned int num, int count_of_printed) {
+int printf_binary(unsigned int num, int printed) {
     if (num == 0) {
         putchar('0');
-        count_of_printed++;
-        return count_of_printed;
+        printed++;
+        return printed;
     }
 
     int binary[32] = {0};
@@ -21,8 +21,8 @@ int printf_binary(unsigned int num, int count_of_printed) {
     while (i > 0) {
         i--;
         putchar('0' + binary[i]);
-        count_of_printed++;
+        printed++;
     }
 
-    return count_of_printed;
+    return printed;
 }
