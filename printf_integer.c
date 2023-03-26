@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 int printf_integer(va_list args, int printed)
 {
