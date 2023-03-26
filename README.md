@@ -19,7 +19,7 @@ is a Low-Level Programming project writen in C language.
 |      [📌](#_printf)      | [_printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |      [📌](#_putchar)      | [_putchar.c](./_putchar.c)                         | Custom implementation of the inbuilt `putchar`.                                |
 |   [📌](#main)    | [main.c](./main.c)                 | Tests for `_printf` program.       |
-|   [📌](#buffer_opsc)    | [buffer_ops.c](./buffer_ops.c)                 | Contains functions related to the buffer.                    |
+|   [📌](#main.h)    | [main.h](./main.h)                 | Header file containing all prototypes for                    |
 |   [📌](#buffer_ops2c)   | [buffer_ops2.c](./buffer_ops2.c)               | Contains functions related to the buffer.                    |
 | [📌](#write_op_funcsc)  | [write_op_funcs.c](./write_op_funcs.c)         | Contains functions related to writing out the `Buffer` to `STDOUT`. |
 | [📌](#write_op2_funcsc) | [write_op2_funcs.c](write_op2_funcs.c)         | Contains a function that converts binary into base 10 number. |
