@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * printf_binary - prints a binary number
+ * @num: number of arguements
+ * @printed: the printed characters
+ * Return: printed charcaters
+ */
+
 int printf_octal(unsigned int num, int printed)
 {
 	int oct[100], i = 0, j;
