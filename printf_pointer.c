@@ -1,13 +1,13 @@
 #include "main.h"
 
+#define MAX_HEX_DIGITS 16
+
 /**
  * printf_pointer - prints a binary number
  * @args: numberof arguements
  * @printed: the printed characters
  * Return: printed charcaters
  */
-
-#define MAX_HEX_DIGITS 16
 
 int printf_pointer(va_list args, int printed)
 {
