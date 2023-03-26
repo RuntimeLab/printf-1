@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_binary - prints a binary number
+ * printf_octal - prints a binary number
  * @num: number of arguements
  * @printed: the printed characters
  * Return: printed charcaters
