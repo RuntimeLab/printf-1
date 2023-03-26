@@ -1,6 +1,6 @@
 #include "main.h"
 
-int pr_x(unsigned int num, int printed, int uppercase)
+int _x(unsigned int num, int printed, int uppercase)
 {
 	int hex[100], i = 0, j;
 
