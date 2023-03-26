@@ -2,6 +2,7 @@
 
 /**
  * printf_char - prints a binary number
+ * @args: the arguements to use
  * @printed: the printed characters
  * Return: printed charcaters
  */
