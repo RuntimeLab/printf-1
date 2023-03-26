@@ -16,7 +16,7 @@ is a Low-Level Programming project writen in C language.
 
 |          Goto          | Files                                          | Description                                                  |
 | :--------------------: | :--------------------------------------------- | ------------------------------------------------------------ |
-|      [📌](#printf)      | [printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
+|      [📌](#_printf)      | [_printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |      [📌](#printf)      | [printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |   [📌](#buffer_intc)    | [buffer_int.c](./buffer_int.c)                 | Contains function to `Allocate` and `free` a `Buffer`.       |
 |   [📌](#buffer_opsc)    | [buffer_ops.c](./buffer_ops.c)                 | Contains functions related to the buffer.                    |
