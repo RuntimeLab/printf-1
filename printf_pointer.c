@@ -1,6 +1,6 @@
 #include "main.h"
 
-int printf_pointer(va_list args, int count_of_printed)
+int printf_pointer(va_list args, int printed)
 {
     void *ptr = va_arg(args, void *);
     unsigned long int num = (unsigned long int) ptr;
@@ -8,14 +8,14 @@ int printf_pointer(va_list args, int count_of_printed)
     int temp = num;
     putchar('0');
     putchar('x');
-    count_of_printed += 2;
+    printed += 2;
     while (temp != 0) {
         digits++;
         temp /= 16;
     }
     if (num == 0) {
         putchar('0');
-        count_of_printed++;
+        printed++;
     }
     else {
         char hex_digits[] = "0123456789abcdef";
@@ -28,8 +28,8 @@ int printf_pointer(va_list args, int count_of_printed)
         }
         for (i = 0; i < digits; i++) {
             putchar(buffer[i]);
-            count_of_printed++;
+            printed++;
         }
     }
-    return count_of_printed;
+    return printed;
 }
