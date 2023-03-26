@@ -18,7 +18,7 @@ is a Low-Level Programming project writen in C language.
 | :--------------------: | :--------------------------------------------- | ------------------------------------------------------------ |
 |      [📌](#_printf)      | [_printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |      [📌](#_putchar)      | [_putchar.c](./_putchar.c)                         | Custom implementation of the inbuilt `putchar`.                                |
-|   [📌](#buffer_intc)    | [buffer_int.c](./buffer_int.c)                 | Contains function to `Allocate` and `free` a `Buffer`.       |
+|   [📌](#main)    | [main.c](./main.c)                 | Tests for `_printf` program.       |
 |   [📌](#buffer_opsc)    | [buffer_ops.c](./buffer_ops.c)                 | Contains functions related to the buffer.                    |
 |   [📌](#buffer_ops2c)   | [buffer_ops2.c](./buffer_ops2.c)               | Contains functions related to the buffer.                    |
 | [📌](#write_op_funcsc)  | [write_op_funcs.c](./write_op_funcs.c)         | Contains functions related to writing out the `Buffer` to `STDOUT`. |
