@@ -1,32 +1,37 @@
 #include "main.h"
 
-int printf_pointer(va_list args, int printed) {
-    void *ptr = va_arg(args, void *);
-    char hex[16];
-    int i, j;
-    unsigned long int address = (unsigned long int)ptr;
-    printed += printf_string("0x");
-
-    if (address == 0) {
-        printed += printf_char('0');
-        return printed;
+int print_pointer(va_list args, int printed) {
+    void *ptr = va_arg(args, void*);
+    unsigned long long num = (unsigned long long) ptr;
+    int digits = 0;
+    int i;
+    unsigned long long temp = num;
+    
+    while (temp != 0) {
+        digits++;
+        temp /= 16;
     }
 
-    for (i = 0; address != 0; i++) {
-        int remainder = address % 16;
-        if (remainder < 10) {
-            hex[i] = remainder + '0';
-        } else {
-            hex[i] = remainder - 10 + 'a';
+    printed += _putchar('0');
+    printed += _putchar('x');
+
+    if (num == 0) {
+        printed += _putchar('0');
+    } else {
+        char hex_digits[16] = "0123456789abcdef";
+        char hex[digits];
+
+        for (int i = digits - 1; i >= 0; i--) {
+            int digit = num % 16;
+            hex[i] = hex_digits[digit];
+            num /= 16;
         }
-        address /= 16;
+
+        for (int i = 0; i < digits; i++) {
+            printed += _putchar(hex[i]);
+        }
     }
 
-    for (j = i - 1; j >= 0; j--) {
-        printed += printf_char(hex[j]);
-    }
-
-    return (printed);
+    return printed;
 }
 
-}
