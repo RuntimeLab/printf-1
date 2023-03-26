@@ -17,14 +17,14 @@ int printf_hex(unsigned int num, int printed, int uppercase) {
         num /= 16;
     }
     if (i == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
     } else {
         for (j = i - 1; j >= 0; j--) {
-            putchar(hex[j]);
+            _putchar(hex[j]);
             printed++;
         }
     }
-    return printed;
+    return (printed);
 }
 
