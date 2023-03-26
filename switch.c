@@ -1,45 +1,45 @@
 #include "main.h"
 
-int select_specifier(const char *format, va_list args, int count_of_printed)
+int select_specifier(const char *format, va_list args, int printed)
 {
 	switch (*format)
 	{
 		case 'd':
 		case 'i':
-			count_of_printed = printf_integer(args, count_of_printed);
+			printed = printf_integer(args, printed);
 			break;
 		case 'c':
 			putchar(va_arg(args, int));
-			count_of_printed++;
+			printed++;
 			break;
 		case 's':
-			count_of_printed = printf_string(args, count_of_printed);
+			printed = printf_string(args, printed);
 			break;
 		case '%':
 			putchar('%');
-			count_of_printed++;
+			printed++;
 			break;
 		case 'b':
-			count_of_printed = printf_binary(va_arg(args, unsigned int), count_of_printed);
+			printed = printf_binary(va_arg(args, unsigned int), printed);
 			break;
 		case 'x':
 		case 'X':
-			count_of_printed = printf_hex(va_arg(args, unsigned int), count_of_printed, (*format == 'X') ? 1 : 0);
+			printed = printf_hex(va_arg(args, unsigned int), printed, (*format == 'X') ? 1 : 0);
 			break;
 		case 'o':
-			count_of_printed = printf_octal(va_arg(args, unsigned int), count_of_printed);
+			printed = printf_octal(va_arg(args, unsigned int), printed);
 			break;
 		case 'u':
-			count_of_printed = printf_unsigned(va_arg(args, unsigned int), count_of_printed);
+			printed = printf_unsigned(va_arg(args, unsigned int), printed);
 			break;
 		case 'r':
-			count_of_printed = printf_reverse(args, count_of_printed);
+			printed = printf_reverse(args, printed);
 			break;
 		case 'p':
-			count_of_printed = printf_pointer(args, count_of_printed);
+			printed = printf_pointer(args, printed);
 			break;
 		default:
 			break;
 	}
-	return count_of_printed;
+	return printed;
 }
