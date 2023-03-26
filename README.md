@@ -16,10 +16,8 @@ is a Low-Level Programming project writen in C language.
 
 |          Goto          | Files                                          | Description                                                  |
 | :--------------------: | :--------------------------------------------- | ------------------------------------------------------------ |
-|      [📌](#printf)      | [printf.c](./printf.c)                         | Entry point for the `printf`.                                |
-|                        | [holberton.h](./holberton.c)                   | Header files for the the whole project.                      |
-|                        | [global_definitions.h](./global-definitions.h) | Header file that defines macro for `NULL`, `True`, and `False`. |
-|      [📌](#opidc)       | [opid.c](./opid.c)                             | Contains the functions for handling the function pointers.   |
+|      [📌](#printf)      | [printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
+|      [📌](#printf)      | [printf.c](./printf.c)                         | Entry point for the `_printf`.                                |
 |   [📌](#buffer_intc)    | [buffer_int.c](./buffer_int.c)                 | Contains function to `Allocate` and `free` a `Buffer`.       |
 |   [📌](#buffer_opsc)    | [buffer_ops.c](./buffer_ops.c)                 | Contains functions related to the buffer.                    |
 |   [📌](#buffer_ops2c)   | [buffer_ops2.c](./buffer_ops2.c)               | Contains functions related to the buffer.                    |
