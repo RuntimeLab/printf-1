@@ -9,13 +9,13 @@ int printf_octal(unsigned int num, int printed) {
         num /= 8;
     }
     if (i == 0) {
-        putchar('0');
+        _putchar('0');
         printed++;
     } else {
         for (j = i - 1; j >= 0; j--) {
-            putchar(oct[j]);
+            _putchar(oct[j]);
             printed++;
         }
     }
-    return printed;
+    return (printed);
 }
